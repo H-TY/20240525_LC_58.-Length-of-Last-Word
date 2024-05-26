@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Example 1:
+        // Input: s = "Hello World"
+        // Output: 5
+
+        // Example 2:
+        Input: s = "   fly me   to   the moon  "
+        // Output: 4
+
+        // Example 3:
+        // Input: s = "luffy is still joyboy"
+        // Output: 6
+
+        // .trim() 移除字串的前後空白
+        // .split(' ') 將字串轉成陣列，用空白當作分隔的基準
+        // let Ns = s.trim().split(' ')
+        // console.log(Ns)
+        // // ['fly', 'me', '', '', 'to', '', '', 'the', 'moon']
+        // let r = Ns[Ns.length - 1].length
+        // console.log(r)
+
+        console.log(s.trim().split(' ')[s.trim().split(' ').length - 1].length)
+
+
+
+
+        /**
+     * @param {string} s
+     * @return {number}
+     */
+        var lengthOfLastWord = function (s) {
+            return s.trim().split(' ')[s.trim().split(' ').length - 1].length
+        };
+    </script>
+
+</body>
+
+</html>
